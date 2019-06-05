@@ -1,0 +1,169 @@
+::-webkit-scrollbar-thumb{ background: #16a085; }
+.landing-graphic-holder{
+    height: calc(100vh - 150px);
+    padding: 50px;
+    flex-direction: column;
+}
+.landing-graphic-holder img{
+    height: calc(100% - 40px);
+    z-index: 0;
+}
+.landing-graphic-holder h1{
+    position: absolute;
+    top:23%;
+    left: 55%;
+}
+
+.webrtc-features{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 85px;
+    font-size: 36px;
+}
+.first{
+    max-width: 240px;
+    min-width: 240px;
+    max-height: 210px;
+}
+.first img{
+    max-width: 100%;
+}
+/*Bootstrap*/
+
+.dropdown .dropdown-menu a:active{
+    background-color: #1abc9c;
+}
+.dropdown .dropdown-menu a.active{
+    color: #1abc9c;
+}
+
+@media only screen and (max-width: 991px) {
+    .landing-graphic-holder{
+        height: 100vh;
+    }
+    .first{
+        order: 1;
+        max-width: 100%;
+        min-width: 240px;
+    }
+    .second{
+        order:2;
+    }
+    .first img{
+        padding: 30px;
+    }
+    .first img{
+        max-height: 100%;
+        max-width: 220px;
+    }
+}
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For ipads */
+    .landing-graphic-holder h1{
+        top:70%;
+        left: 20%;
+        text-align: center !important;
+    }
+}
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: 'mobile-app-icons';
+    src:  url('../../fonts/icons/services-mobile-app/mobile-app-icons.eot?jhhs3b');
+    src:  url('../../fonts/icons/services-mobile-app/mobile-app-icons.eot?jhhs3b#iefix') format('embedded-opentype'),
+    url('../../fonts/icons/services-mobile-app/mobile-app-icons.ttf?jhhs3b') format('truetype'),
+    url('../../fonts/icons/services-mobile-app/mobile-app-icons.woff?jhhs3b') format('woff'),
+    url('../../fonts/icons/services-mobile-app/mobile-app-icons.svg?jhhs3b#home-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+span.dl-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'mobile-app-icons' !important;
+}
+
+.dl-icon-advertising:before {
+    content: "\e900";
+}
+.dl-icon-analysis:before {
+    content: "\e901";
+}
+.dl-icon-communications:before {
+    content: "\e902";
+}
+.dl-icon-customer-experience:before {
+    content: "\e903";
+}
+.dl-icon-data:before {
+    content: "\e904";
+}
+.dl-icon-education:before {
+    content: "\e905";
+}
+.dl-icon-efficiency:before {
+    content: "\e906";
+}
+.dl-icon-engagement:before {
+    content: "\e907";
+}
+.dl-icon-fasyer-purchases:before {
+    content: "\e908";
+}
+.dl-icon-hospital:before {
+    content: "\e909";
+}
+.dl-icon-loss-falling:before {
+    content: "\e90a";
+}
+.dl-icon-manufacturing:before {
+    content: "\e90b";
+}
+.dl-icon-map-marker:before {
+    content: "\e90c";
+}
+.dl-icon-message-customization:before {
+    content: "\e90d";
+}
+.dl-icon-multi-screen:before {
+    content: "\e90e";
+}
+.dl-icon-navigation:before {
+    content: "\e90f";
+}
+.dl-icon-personal-engagement:before {
+    content: "\e910";
+}
+.dl-icon-profit-rising:before {
+    content: "\e911";
+}
+.dl-icon-real-estate:before {
+    content: "\e912";
+}
+.dl-icon-retail:before {
+    content: "\e913";
+}
+.dl-icon-rtc-server-side:before {
+    content: "\e914";
+}
+.dl-icon-second-screen:before {
+    content: "\e915";
+}
+.dl-icon-spanner:before {
+    content: "\e916";
+}
+.dl-icon-tailored-content:before {
+    content: "\e917";
+}
+.dl-icon-target:before {
+    content: "\e918";
+}
+.dl-icon-third-party:before {
+    content: "\e919";
+}
+.dl-icon-travel:before {
+    content: "\e91a";
+}

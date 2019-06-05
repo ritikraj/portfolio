@@ -1,0 +1,110 @@
+::-webkit-scrollbar-track{ background: var(--orange); }
+::-webkit-scrollbar-thumb{ background: var(--pomegranate); }
+.landing-graphic-holder{
+    height: calc(100vh - 150px);
+    padding: 50px;
+    flex-direction: column;
+}
+.landing-graphic-holder img{
+    height: calc(100% - 40px);
+    z-index: 0;
+}
+.landing-graphic-holder h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+.ecommerce-features{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 85px;
+    font-size: 32px;
+}
+.ecommerce-features.i-1{
+    font-size: 24px;
+}
+/*Bootstrap*/
+
+.dropdown .dropdown-menu a:active{
+    background-color: #f39c12;
+}
+.dropdown .dropdown-menu a.active{
+    color: #f39c12;
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For ipads */
+    .landing-graphic-holder h1{
+        top:70%;
+        position: static;
+        left: auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-device-width: 767.98px) {
+    .landing-graphic-holder img{
+        max-width: 150%;
+    }
+}
+
+@font-face {
+    font-family: 'ecommerce-icons';
+    src:  url('../../fonts/icons/services-ecommerce/ecommerce-icons.eot?pz5jgz');
+    src:  url('../../fonts/icons/services-ecommerce/ecommerce-icons.eot?pz5jgz#iefix') format('embedded-opentype'),
+    url('../../fonts/icons/services-ecommerce/ecommerce-icons.ttf?pz5jgz') format('truetype'),
+    url('../../fonts/icons/services-ecommerce/ecommerce-icons.woff?pz5jgz') format('woff'),
+    url('../../fonts/icons/services-ecommerce/ecommerce-icons.svg?pz5jgz#ecommerce-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+span.dl-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ecommerce-icons' !important;
+}
+.dl-icon-advertising:before {
+    content: "\e900";
+}
+.dl-icon-analysis:before {
+    content: "\e901";
+}
+.dl-icon-booking-order:before {
+    content: "\e902";
+}
+.dl-icon-browsing-content:before {
+    content: "\e903";
+}
+.dl-icon-customer-service:before {
+    content: "\e904";
+}
+.dl-icon-landing-page:before {
+    content: "\e905";
+}
+.dl-icon-managing-lists:before {
+    content: "\e906";
+}
+.dl-icon-ntifications:before {
+    content: "\e907";
+}
+.dl-icon-payment:before {
+    content: "\e908";
+}
+.dl-icon-payout:before {
+    content: "\e909";
+}
+.dl-icon-ratings:before {
+    content: "\e90a";
+}
+.dl-icon-security:before {
+    content: "\e90b";
+}
+.dl-icon-social-sharing:before {
+    content: "\e90c";
+}
+.dl-icon-user:before {
+    content: "\e90d";
+}
+.dl-icon-vendors:before {
+    content: "\e90e";
+}

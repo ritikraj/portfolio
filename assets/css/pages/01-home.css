@@ -1,0 +1,243 @@
+::-webkit-scrollbar-track{ background-color: var(--midnightblue) }
+::-webkit-scrollbar-thumb{ background-color: var(--snowwhite);  }
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    overflow: visible;
+}
+.cloud-2 {
+    justify-content: flex-end;
+}
+.bg-cloud{
+    height: 30px;
+    width: 100px;
+}
+.bg-cloud-1{
+    top:120px;
+    left:130px;
+}
+.bg-cloud-2{
+    top:120px;
+    right:40px;
+}
+.bg-cloud-3{
+    bottom:40px;
+    left:20px;
+}
+.bg-cloud-4{
+    top:240px;
+    right:5px;
+}
+.landing-data{
+    height: calc(100vh - 100px);
+}
+
+.client-image {
+    padding-bottom: 40px;
+}
+.client-image img{
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #dadada;
+}
+.client-image:hover img{
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+.client-image .client-name{
+    font-family: QuicksandBold;
+    color: #2c3e50;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.talking-numbers div.col{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.testimonial{
+    min-height: 500px;
+}
+.clients-say{
+    padding: 3rem;
+    justify-content: center;
+    line-height: 2;
+}
+.clients-say:before, .clients-say:after{
+    content: url("../../images/graphics/clouds/cloud-white.svg");
+    position: absolute;
+    width: 160px;
+    z-index: -1;
+}
+.clients-say:before{
+    bottom:10px;
+    left: -70px;
+}
+.clients-say:after{
+    top:10px;
+    right: -70px;
+}
+/*Bootstrap*/
+
+.dropdown .dropdown-menu a:active{
+    background-color: var(--midnightblue);
+}
+.carousel-indicators{
+    top:calc(100% + 50px) !important;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    top:0;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    height: 16px !important;
+    width: 16px !important;
+}
+.carousel-indicators li.active{
+    top:-7px;
+    height: 28px !important;
+    width: 28px !important;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+    color: white !important;
+}
+
+@media screen and (max-width: 992px){
+
+    .landing-data{
+        height: 100%;
+    }
+
+    .landing-data h1{
+        font-size: 24px;
+    }
+    .landing-data h2{
+        font-size: 20px;
+    }
+    .landing-data h4{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg-cloud{
+        width: 70px;
+        height: 20px;
+    }
+    .bg-cloud-1 {
+        top: 70px;
+        left: 20px;
+    }
+    .bg-cloud-2 {
+        top: 50%;
+        right: -30px;
+    }
+    .bg-cloud-4 {
+        top: 80px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bg-cloud-1 {
+        display: none;
+    }
+    .bg-cloud-2 {
+        top: 100px;
+        right: -30px;
+    }
+    .bg-cloud-3 {
+        top: 70px;
+        left: -20px;
+    }
+    .bg-cloud-4 {
+        display: none;
+    }
+    .clients-say{
+        padding: 1rem;
+    }
+    .clients-say:before, .clients-say:after{
+        width: 100px;
+    }
+    .clients-say:before{
+        left: -40px;
+    }
+    .clients-say:after{
+        right: -40px;
+    }
+}
+
+/*@media screen and (max-height: 925px){*/
+    /*.landing-screen{*/
+        /*min-height: 120vh;*/
+    /*}*/
+/*}*/
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: 'home-icons';
+    src:  url('../../fonts/icons/home/home-icons.eot?jhhs3b');
+    src:  url('../../fonts/icons/home/home-icons.eot?jhhs3b#iefix') format('embedded-opentype'),
+    url('../../fonts/icons/home/home-icons.ttf?jhhs3b') format('truetype'),
+    url('../../fonts/icons/home/home-icons.woff?jhhs3b') format('woff'),
+    url('../../fonts/icons/home/home-icons.svg?jhhs3b#home-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+span.dl-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'home-icons' !important;
+}
+.dl-icon-advertisements:before {
+    content: "\e900";
+}
+.dl-icon-big-data:before {
+    content: "\e901";
+}
+.dl-icon-business-intelligence:before {
+    content: "\e902";
+}
+.dl-icon-computer-vision:before {
+    content: "\e903";
+}
+.dl-icon-elearning:before {
+    content: "\e904";
+}
+.dl-icon-machine-learning:before {
+    content: "\e905";
+}
+.dl-icon-online-video:before {
+    content: "\e906";
+}
+.dl-icon-real-time-communication:before {
+    content: "\e907";
+}
