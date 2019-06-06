@@ -76,17 +76,17 @@ function bounce () {
 }
 
 $(document).ready(function () {
-    // viewport();
-    // const ball = '<div class="red ball fixed-center"></div>';
-    // $(".preloader").append(ball);
-    // bounce();
+    viewport();
+    const ball = '<div class="red ball fixed-center"></div>';
+    $(".preloader").append(ball);
+    bounce();
 });
 
 $(window).on("load", function() {
-    // setTimeout(function () {
-        // anime.remove($(".ball")[0]);
-        // expand();
-    // }, 1500);
+    setTimeout(function () {
+        anime.remove($(".ball")[0]);
+        expand();
+    }, 1500);
 });
 
 $(window).resize( function() {
