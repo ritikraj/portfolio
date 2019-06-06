@@ -2,21 +2,47 @@
  * Created by Eleven on 03-01-2019.
  */
 
+let viewportWidth, viewportHeight;
+let canHideBall = false;
+
+function viewport() {
+    viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+}
+
 function letJqueryWork(){
     setTimeout( function () {
-        $(".preloader").remove();
-        $(".ball").animate({
-            top: "100px",
-            left : "100px",
-            minHeight : "70px",
-            minWidth : "70px",
+        const ball2 = $(".ball").clone(true);
+        let top, left;
+        if( viewportWidth < 992) {
+            top = "-70px";
+            left = "47%";
+        }
+        else {
+            top = "75px";
+            left = "205px";
+        }
 
-        },600);
+        $(".preloading").fadeOut( function () {
+            $("body").append(ball2);
+            $(".preloader").remove();
+            $(".ball").animate({
+                top: top,
+                left : left,
+                margin: 0,
+                zIndex: 9,
+                minHeight : "70px",
+                minWidth : "70px",
+
+            },600, function () {
+                canHideBall = true;
+            });
+        });
     }, 500, );
 }
 
 function expand() {
-    var ball = $(".ball")[0];
+    const ball = $(".ball")[0];
 
     anime({
         targets : ball,
@@ -32,7 +58,7 @@ function expand() {
 }
 
 function bounce () {
-    var tl = anime.timeline({
+    const tl = anime.timeline({
         targets: $(".ball")[0],
         duration: 400,
         easing: 'easeInCubic',
@@ -50,14 +76,30 @@ function bounce () {
 }
 
 $(document).ready(function () {
+    // viewport();
+    // const ball = '<div class="red ball fixed-center"></div>';
+    // $(".preloader").append(ball);
+    // bounce();
 });
 
 $(window).on("load", function() {
-    // var ball = '<div class="red ball fixed-center"></div>';
-    // $("body").append(ball);
-    // bounce();
     // setTimeout(function () {
-    //     anime.remove($(".ball")[0]);
-    //     expand();
+        // anime.remove($(".ball")[0]);
+        // expand();
     // }, 1500);
+});
+
+$(window).resize( function() {
+    viewport();
+    if(viewportWidth < 992 && canHideBall) {
+        $(".ball").fadeOut();
+        canHideBall = false;
+    }
+    if(viewportWidth >= 992 && !canHideBall) {
+        $(".ball").css({
+            top: "75px",
+            left: "205px"
+        }).fadeIn();
+        canHideBall = true;
+    }
 });
