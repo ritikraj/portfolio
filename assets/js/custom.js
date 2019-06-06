@@ -3,7 +3,7 @@
  */
 let activeTile = -1;
 let activeScreen = -1;
-const tileHeading = ["Home", "Projects", "Skills", "About Me"];
+// const tileHeading = ["Home", "Projects", "Skills", "About Me"];
 
 $.fn.fadeOutRemove = function ( callback = function () {} ) {
     $(this)
@@ -16,6 +16,43 @@ $.fn.fadeOutRemove = function ( callback = function () {} ) {
             callback();
     });
 };
+
+function appendSlideShow(list) {
+    let indicators = '<ol class="carousel-indicators">\n';
+    let carouselItems = '';
+    for(let i = 0; i < list.length; i++){
+        let classList = "";
+        if(i === 0) classList = "active";
+        indicators += '<li data-target="#carrr" data-slide-to="'+i+'" class="'+ classList+'"></li>\n';
+        carouselItems += '<div class="carousel-item h-100 '+classList+'">\n' +
+            '        <img src="'+list[i].link+'" alt="...">\n' +
+            '        <div class="carousel-caption">\n' +
+            '          <h5 class="dark-text">'+list[i].name+'</h5>\n' +
+            '          <p class="font-italic text-muted">'+list[i].description+'</p>\n' +
+            '        </div>\n' +
+            '      </div>\n';
+    }
+    indicators += '</ol>\n' ;
+
+    const data = '<div class="row">\n' +
+        '  <div id="carrr" class="carousel slide col-12" data-ride="carousel">\n' +
+        indicators +
+        '    <div class="carousel-inner text-center">\n'
+            + carouselItems +
+        '    </div>\n' +
+        '    <a class="carousel-control-prev" href="#carrr" role="button" data-slide="prev">\n' +
+        '      <span class="carousel-control-prev-icon" aria-hidden="true"></span>\n' +
+        '      <span class="sr-only">Previous</span>\n' +
+        '    </a>\n' +
+        '    <a class="carousel-control-next" href="#carrr" role="button" data-slide="next">\n' +
+        '      <span class="carousel-control-next-icon" aria-hidden="true"></span>\n' +
+        '      <span class="sr-only">Next</span>\n' +
+        '    </a>\n' +
+        '  </div>\n' +
+        '</div>';
+
+    $(".data-holder").append(data);
+}
 
 function appendDataHolder(heads, index) {
     const holder = '<div class="data-holder"></div>';
@@ -36,15 +73,134 @@ function closeAction() {
     });
 }
 
+function appendSkillsInfo(list) {
+    console.log(list[0].data.length);
+    const content = '<div class="content"></div>';
+    $(".data-holder").append(content);
+    let html = '<div>';
+    for(let i = 0; i < list[0].data.length; i++){
+        let classList = "";
+        if(i !== 0) classList = "mt-5";
+        html += '<div class="dark-text '+classList+'">' +
+            '<h3 class="skill-title font-italic">'+ list[0].data[i].title+'<div class="skill-bar"></div></h3>';
+
+        for( let j = 0; j < list[0].data[i].data.length; j++){
+            let classList2 = "";
+            if(j === 0) classList2 = "mt-4";
+            html+= '<h5 class="text-muted mt-2 '+classList2+'">'+ list[0].data[i].data[j].val +'</h5>';
+        }
+        html+= '</div>';
+    }
+    html+= '</div>';
+    $(".content").append(html);
+}
+
 // use h3 and h4 for project details
 
 function appendProjects(index) {
     const heads = ['UI/UX', 'WEB'];
+    let projects;
+    if(index === 0) projects = [
+        {name : "Osler Health Network - Patient App", link: "assets/images/projects/ui-ux/osler-health.png", description: "DevsLane"},
+        {name : "Confession Messenger", link: "assets/images/projects/ui-ux/confession.png", description: "DevsLane"},
+        {name : "DevsLane Website", link: "assets/images/projects/ui-ux/devslane-website.svg", description: "DevsLane"},
+        {name : "Swirnow - Dashboard", link: "assets/images/projects/ui-ux/swirnow-dashboard.png", description: "DevsLane"},
+        {name : "Swirnow - Sites", link: "assets/images/projects/ui-ux/swirnow-guest.svg", description: "DevsLane"},
+        {name : "Vaetas - Shopify", link: "assets/images/projects/ui-ux/vaetas-shopify.png", description: "DevsLane"},
+        {name : "Butterfly - Dashboard", link: "assets/images/projects/ui-ux/butterfly.png", description: "DevsLane"},
+        {name : "RaRa - Web Dashboard", link: "assets/images/projects/ui-ux/rara-dashboard.png", description: "DevsLane"}
+    ];
+    else if(index === 1) projects = [
+        {name : "DevsLane Website", link: "assets/images/projects/web/devslane.svg", description: "DevsLane", href: "https://devslane.com/"},
+        {name : "StayDuvet", link: "assets/images/projects/web/stay-duvet.png", description: "DevsLane", href: "https://stayduvet.com/"},
+        {name : "PulseLabs", link: "assets/images/projects/web/pulselabs.png", description: "DevsLane", href: "https://dev.pulselabs.ai/"}
+    ];
     appendDataHolder(heads, index);
+    appendSlideShow(projects);
 }
 function appendSkills(index) {
     const heads = ['UX', 'UI', 'WEB'];
+    let skills;
+    if(index === 0) skills = [{
+        data: [
+            {
+                title: 'Skills',
+                data: [
+                    {val : "UX Research"},
+                    {val : "Ongoing Trends"},
+                    {val : "Laws of UX"},
+                ]
+            },
+            {
+                title: 'Tools',
+                data: [
+                    {val : "Adobe XD"},
+                    {val : "Adobe Illustrator"},
+                    {val : "Invision Studio"},
+                    {val : "Figma"},
+                    {val : "UX Pin"},
+                ]
+            }
+        ]
+    }];
+    else if(index === 1) skills = [{
+        data: [
+            {
+                title: 'Skills',
+                data: [
+                    {val : "Vector Manipulation"},
+                    {val : "Material Design"},
+                    {val : "Flat Designs"},
+                    {val : "Typography"},
+                    {val : "Motion Graphics"},
+                ]
+            },
+            {
+                title: 'Tools',
+                data: [
+                    {val : "Adobe Illustrator"},
+                    {val : "Adobe XD"},
+                    {val : "Adobe Photoshop"},
+                    {val : "Adobe After Effects"},
+                ]
+            }
+        ]
+    }];
+    else if(index === 2) skills = [{
+        data: [
+            {
+                title: 'Mastered',
+                data: [
+                    {val : "jQuery"},
+                    {val : "CSS3, SCSS"},
+                    {val : "HTML5 & Responsive Designs"},
+                ]
+            },
+            {
+                title: 'Playing with...',
+                data: [
+                    {val : "Vanilla Javascript"},
+                    {val : "VueJS & Angular 4"},
+                ]
+            },
+            {
+                title: 'Backend related',
+                data: [
+                    {val : "PHP/Laravel"},
+                    {val : "Android Using Java"},
+                    {val : "Cordova"},
+                ]
+            },
+            {
+                title: 'and...',
+                data: [
+                    {val : "Knowledge of Github"},
+                ]
+            }
+        ]
+    }];
     appendDataHolder(heads, index);
+    appendSkillsInfo(skills);
 }
 
 function appendTileData(index) {
@@ -64,7 +220,6 @@ function appendTileData(index) {
 function onCircleClick() {
     $(".circle").on("click", function (e) {
         const index = $(this.parentNode).index();
-        console.log(index);
         var fc = '<div class="fixed-circle"></div>';
         $('body').prepend(fc);
         $(".fixed-circle")
@@ -159,15 +314,19 @@ function backBoxClick() {
 }
 
 function onDownArrowClick() {
+    let clicked = true;
     $(".round-button").on("click", function () {
-        activeScreen = 2;
-        $(this).addClass("animated fadeOut");
-        $(".quarter").eq(activeTile).find(".tile").addClass("animated fadeOutUp");
-        const data = appendCircles();
-        setTimeout( function () {
-            $(".quarter").eq(activeTile).append(data).find(".tile").addClass("d-none");
-            onCircleClick();
-        }, 1200);
+        if(clicked){
+            clicked = false;
+            activeScreen = 2;
+            $(this).addClass("animated fadeOut");
+            $(".quarter").eq(activeTile).find(".tile").addClass("animated fadeOutUp");
+            const data = appendCircles();
+            setTimeout( function () {
+                $(".quarter").eq(activeTile).append(data).find(".tile").addClass("d-none");
+                onCircleClick();
+            }, 1200);
+        }
 
     });
 

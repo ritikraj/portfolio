@@ -45,8 +45,8 @@
         width: 0;
     }
     100%{
-        top: -120vh;
-        left: -120vh;
+        top: 50vh;
+        left: 50vh;
         height: 300vh;
         width: 300vh;
     }
