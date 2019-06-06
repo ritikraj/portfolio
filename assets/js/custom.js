@@ -17,39 +17,64 @@ $.fn.fadeOutRemove = function ( callback = function () {} ) {
     });
 };
 
-function appendProjects() {
-
+function appendDataHolder(heads, index) {
+    const holder = '<div class="data-holder"></div>';
+    $('body').append(holder).find(".data-holder").animate({ opacity :1 }, 300);
+    const header = '<div class="heading">' +
+        '<div class="heads">' + heads[index] +
+        '</div>' +
+        '<div class="close-button central"> <i class="material-icons">close</i></div>' +
+        '</div>';
+    $(".data-holder").append(header);
+    closeAction();
 }
-function appendSkills() {
 
+function closeAction() {
+    $(".close-button").on("click", function () {
+        $(".fixed-circle").remove();
+        $(".data-holder").fadeOutRemove();
+    });
 }
 
-function appendSliderOrData(index) {
+// use h3 and h4 for project details
+
+function appendProjects(index) {
+    const heads = ['UI/UX', 'WEB'];
+    appendDataHolder(heads, index);
+}
+function appendSkills(index) {
+    const heads = ['UX', 'UI', 'WEB'];
+    appendDataHolder(heads, index);
+}
+
+function appendTileData(index) {
     if( activeTile === 0){
 
     }
     else if( activeTile === 1){
-        appendProjects();
+        appendProjects(index);
     }
     else if( activeTile === 2){
-        appendSkills();
+        appendSkills(index);
     }
     else if( activeTile === 3){
     }
 }
 
 function onCircleClick() {
-    console.log("Hello");
     $(".circle").on("click", function (e) {
-        console.log(e.clientX, e.clientY);
-        var temp = '<div class="fixed-circle"></div>';
-        $('body').prepend(temp);
+        const index = $(this.parentNode).index();
+        console.log(index);
+        var fc = '<div class="fixed-circle"></div>';
+        $('body').prepend(fc);
         $(".fixed-circle")
             .css({
                 top: e.clientY+"px",
                 left: e.clientX+"px",
         });
-        appendSliderOrData($(this).index());
+        setTimeout( function () {
+            appendTileData(index);
+        }, 800);
     });
 }
 

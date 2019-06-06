@@ -185,6 +185,36 @@ body {
     animation-fill-mode: forwards;
 
 }
+.data-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 12;
+}
+.heading {
+    width: 100%;
+    padding: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heads{
+    font-family: PrimaryLight;
+    font-size: 56px;
+}
+.close-button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    opacity: 0.3;
+}
+.close-button i { font-size: 40px }
+
 
 @media screen and (max-width: 1200px) {
     .circle{
@@ -225,6 +255,20 @@ body {
         top: 10px;
         left: 10px;
     }
+
+    .heading{
+        padding: 20px;
+    }
+    .heads{
+        font-size: 22px;
+    }
+
+    .close-button{
+        height: 30px;
+        width: 30px;
+        border: 1px solid black;
+    }
+    .close-button i { font-size: 16px }
 }
 @media screen and (max-width: 575.98px) {
     .circle{
