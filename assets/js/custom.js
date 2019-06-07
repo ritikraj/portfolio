@@ -40,18 +40,19 @@ function appendSlideShow(list) {
         '    <div class="carousel-inner text-center">\n'
             + carouselItems +
         '    </div>\n' +
-        '    <a class="carousel-control-prev" href="#carrr" role="button" data-slide="prev">\n' +
-        '      <span class="carousel-control-prev-icon" aria-hidden="true"></span>\n' +
-        '      <span class="sr-only">Previous</span>\n' +
-        '    </a>\n' +
-        '    <a class="carousel-control-next" href="#carrr" role="button" data-slide="next">\n' +
-        '      <span class="carousel-control-next-icon" aria-hidden="true"></span>\n' +
-        '      <span class="sr-only">Next</span>\n' +
-        '    </a>\n' +
+        '<div class="controls next central"> <i class="material-icons">chevron_right</i> </div>' +
+        '<div class="controls prev central"> <i class="material-icons">chevron_left</i> </div>' +
         '  </div>\n' +
         '</div>';
 
     $(".data-holder").append(data);
+    $(".carousel-indicators li").eq(0).click();
+    $(".controls.next").on("click", function () {
+        $(".carousel").carousel('next');
+    });
+    $(".controls.prev").on("click", function () {
+        $(".carousel").carousel('prev');
+    })
 }
 
 function appendDataHolder(heads, index) {
@@ -74,7 +75,6 @@ function closeAction() {
 }
 
 function appendSkillsInfo(list) {
-    console.log(list[0].data.length);
     const content = '<div class="content"></div>';
     $(".data-holder").append(content);
     let html = '<div>';
