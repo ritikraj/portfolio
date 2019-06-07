@@ -173,7 +173,17 @@ body {
     font-size: 32px;
     cursor: pointer;
 }
-
+.circle img {
+    width: 60px;
+}
+div:first-of-type > .circle img{
+    width: 80px ;
+}
+.circle.home{
+    padding: 100px 0;
+    border-radius: 10px;
+    background: url("../images/circle.svg"), url("../images/projects/background.svg");
+}
 .fixed-circle {
     position: fixed;
     background: white;
@@ -218,6 +228,10 @@ body {
 .content::-webkit-scrollbar{ width: 5px }
 .content::-webkit-scrollbar-track { background: transparent }
 .content::-webkit-scrollbar-thumb{ background: #232323; border-radius: 5px }
+
+.content > div > div:last-of-type {
+    margin-bottom: 50px;
+}
 
 .skill-title{
     position: relative;
@@ -348,6 +362,16 @@ body {
         padding: 50px;
         font-size: 18px;
     }
+    .circle.home{
+        padding: 75px;
+        font-size: 20px;
+    }
+    .circle img {
+        width: 40px;
+    }
+    div:first-of-type > .circle img{
+        width: 45px ;
+    }
     .controls, .close-button{
         height: 30px;
         width: 30px;
@@ -367,7 +391,7 @@ body {
 @media screen and (max-width: 575.98px) {
 
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 500px) {
     .carousel-caption { display: none !important; }
 }
 @media screen and (max-height: 600px) and (max-width: 600px) {

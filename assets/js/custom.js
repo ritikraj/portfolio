@@ -95,7 +95,6 @@ function appendSkillsInfo(list) {
     $(".content").append(html);
 }
 
-// use h3 and h4 for project details
 
 function appendProjects(index) {
     const heads = ['UI/UX', 'WEB'];
@@ -219,42 +218,47 @@ function appendTileData(index) {
 
 function onCircleClick() {
     $(".circle").on("click", function (e) {
-        const index = $(this.parentNode).index();
-        var fc = '<div class="fixed-circle"></div>';
-        $('body').prepend(fc);
-        $(".fixed-circle")
-            .css({
-                top: e.clientY+"px",
-                left: e.clientX+"px",
-        });
-        setTimeout( function () {
-            appendTileData(index);
-        }, 800);
+        if(activeTile === 1 || activeTile === 2){
+            const index = $(this.parentNode).index();
+            var fc = '<div class="fixed-circle"></div>';
+            $('body').prepend(fc);
+            $(".fixed-circle")
+                .css({
+                    top: e.clientY+"px",
+                    left: e.clientX+"px",
+                });
+            setTimeout( function () {
+                appendTileData(index);
+            }, 800);
+        }
     });
 }
 
 function appendCircles() {
     let data = null;
     if(activeTile === 0) {
-        const t = ['UX', 'WEB'];
         data ='<article class="container removable">' +
-            '<section class="row animated fadeInUp justify-content-center">';
-        for( let i = 0; i < t.length; i++){
-            data += '<div class="col-lg-3 col-5">' +
-                '<div class="central circle">' + t[i] +
-                '</div>' +
-                '</div>';
-        }
-        data += '</section>' +
+            '<section class="row animated fadeInUp justify-content-center">'+
+            '<div class="col-lg-5 col-12">' +
+            '<div class="central circle font-weight-bold home">' + '<div>Ritik Raj' +
+            '<h6 class="mt-3">UI/UX Designer</h6>' +
+            '<h6 class="mt-2">Front-end Developer</h6>' +
+            '</div>' +
+            '</div>' +
+            '</div>'+
+            '</section>' +
             '</article>';
     }
     else if(activeTile === 1) {
         const t = ['UI/UX', 'WEB'];
+        const img = ['assets/images/ux.svg','assets/images/web.svg'];
         data ='<article class="container removable">' +
             '<section class="row animated fadeInUp justify-content-center">';
         for( let i = 0; i < t.length; i++){
-            data += '<div class="col-lg-3 col-6">' +
-                '<div class="central circle">' + t[i] +
+            data += '' +
+                '<div class="col-lg-3 col-6">' +
+                '<div class="central circle">' +
+                '<div><img src="'+ img[i]+'" class="mr-3"></div>' + t[i] +
                 '</div>' +
                 '</div>';
         }
@@ -263,11 +267,14 @@ function appendCircles() {
     }
     else if(activeTile === 2) {
         const t = ['UX', 'UI', 'WEB'];
+        const img = ['assets/images/ux.svg','assets/images/ui.svg','assets/images/web.svg'];
         data ='<article class="container removable">' +
             '<section class="row animated fadeInUp justify-content-center">';
         for( let i = 0; i < t.length; i++){
-            data += '<div class="col-lg-3 col-6">' +
-                '<div class="central circle">' + t[i] +
+            data += '' +
+                '<div class="col-lg-3 col-6">' +
+                '<div class="central circle">' +
+                '<div><img src="'+ img[i]+'" class="mr-3"></div>' + t[i] +
                 '</div>' +
                 '</div>';
         }
