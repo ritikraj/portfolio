@@ -183,17 +183,16 @@ function appendSkills(index) {
                 ]
             },
             {
-                title: 'Backend related',
+                title: 'Backend & OOPs',
                 data: [
                     {val : "PHP/Laravel"},
                     {val : "Android Using Java"},
-                    {val : "Cordova"},
                 ]
             },
             {
                 title: 'and...',
                 data: [
-                    {val : "Knowledge of Github"},
+                    {val : "Knowledge of Git"},
                 ]
             }
         ]
@@ -241,8 +240,17 @@ function appendCircles() {
             '<section class="row animated fadeInUp justify-content-center">'+
             '<div class="col-lg-5 col-12">' +
             '<div class="central circle font-weight-bold home">' + '<div>Ritik Raj' +
-            '<h6 class="mt-3">UI/UX Designer</h6>' +
-            '<h6 class="mt-2">Front-end Developer</h6>' +
+            '<h4 class="mt-3">UI/UX Designer</h4>' +
+            '<h4 class="mt-2">Front-end Developer</h4>' +
+            '<section class="central mt-4">' +
+            '<button class="btn btn-dark central">Resume <i class="material-icons">file_download</i></button>' +
+            '</section>' +
+            '<section class="social central w-100">' +
+            '<a target="_blank" href="https://github.com/ritikraj" class="p-3"><img alt="" src="assets/images/social/github.svg"></a>' +
+            '<a target="_blank" href="https://www.linkedin.com/in/ritik-raj/" class="p-3"><img alt="" src="assets/images/social/linkedin.svg"></a>' +
+            '<a target="_blank" href="https://www.facebook.com/fusion.ritik" class="p-3"><img alt="" src="assets/images/social/facebook.svg"></a>' +
+            '<a target="_blank" href="https://twitter.com/wordsmith_11" class="p-3"><img alt="" src="assets/images/social/twitter.svg"></a>' +
+            '</section>' +
             '</div>' +
             '</div>' +
             '</div>'+
@@ -258,7 +266,7 @@ function appendCircles() {
             data += '' +
                 '<div class="col-lg-3 col-6">' +
                 '<div class="central circle">' +
-                '<div><img src="'+ img[i]+'" class="mr-3"></div>' + t[i] +
+                '<div><img src="'+ img[i]+'" class="mr-1 mr-lg-3"></div>' + t[i] +
                 '</div>' +
                 '</div>';
         }
@@ -274,7 +282,7 @@ function appendCircles() {
             data += '' +
                 '<div class="col-lg-3 col-6">' +
                 '<div class="central circle">' +
-                '<div><img src="'+ img[i]+'" class="mr-3"></div>' + t[i] +
+                '<div><img src="'+ img[i]+'" class="mr-1 mr-lg-3"></div>' + t[i] +
                 '</div>' +
                 '</div>';
         }

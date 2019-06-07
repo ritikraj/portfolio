@@ -180,6 +180,7 @@ div:first-of-type > .circle img{
     width: 80px ;
 }
 .circle.home{
+    cursor: default ;
     padding: 100px 0;
     border-radius: 10px;
     background: url("../images/circle.svg"), url("../images/projects/background.svg");
@@ -230,7 +231,7 @@ div:first-of-type > .circle img{
 .content::-webkit-scrollbar-thumb{ background: #232323; border-radius: 5px }
 
 .content > div > div:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .skill-title{
@@ -307,6 +308,9 @@ div:first-of-type > .circle img{
     bottom: 30px;
 }
 
+.social img {
+    width: 30px !important;
+}
 
 @media screen and (max-width: 1200px) {
     .circle{
