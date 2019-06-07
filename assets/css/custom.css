@@ -348,7 +348,7 @@ body {
         padding: 50px;
         font-size: 18px;
     }
-    .close-button{
+    .controls, .close-button{
         height: 30px;
         width: 30px;
         border: 1px solid black;
