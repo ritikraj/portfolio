@@ -87,7 +87,7 @@ function appendAboutInfo(list) {
         for( let j = 0; j < list[0].data[i].data.length; j++){
             let classList2 = "";
             if(j === 0) classList2 = "mt-4";
-            html+= '<h5 class="text-muted mt-2 '+classList2+'">'+ list[0].data[i].data[j].val +'</h5>';
+            html+= '<h5 class="text-muted my-3 '+classList2+'">'+ list[0].data[i].data[j].val +'</h5>';
         }
         html+= '</div>';
     }
