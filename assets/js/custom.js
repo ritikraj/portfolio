@@ -124,9 +124,9 @@ function appendAbout(index) {
             {
                 title: 'Contact me',
                 data: [
-                    {val : "UX Research"},
-                    {val : "Ongoing Trends"},
-                    {val : "Laws of UX"},
+                    {val : "ritikraj559@gmail.com"},
+                    {val : "+91 94576 83709"},
+                    {val : "+91 96435 56747"},
                 ]
             }
         ]
@@ -136,20 +136,19 @@ function appendAbout(index) {
             {
                 title: 'General',
                 data: [
-                    {val : "Vector Manipulation"},
-                    {val : "Material Design"},
-                    {val : "Flat Designs"},
-                    {val : "Typography"},
-                    {val : "Motion Graphics"},
+                    {val : "Crazy about designs"},
+                    {val : "Very crazy about designs"},
+                    {val : "Learner, dedicated and all the similar things"},
+                    {val : "Keen eye for good designs and designers"},
+                    {val : "Still crazy about designs"},
                 ]
             },
             {
                 title: 'Technical',
                 data: [
-                    {val : "Adobe Illustrator"},
-                    {val : "Adobe XD"},
-                    {val : "Adobe Photoshop"},
-                    {val : "Adobe After Effects"},
+                    {val : "Mastered CSS (it still surprise me, but just sometimes)"},
+                    {val : "Been working on Adobe XD from day one of its launch"},
+                    {val : "Always following great designers around the globe (Dribbble, Medium etc)"},
                 ]
             }
         ]
@@ -159,9 +158,8 @@ function appendAbout(index) {
             {
                 title: 'General',
                 data: [
-                    {val : "jQuery"},
-                    {val : "CSS3, SCSS"},
-                    {val : "HTML5 & Responsive Designs"},
+                    {val : "Very trustworthy"},
+                    {val : "Needs a two-day break after continuous design-related failures"},
                 ]
             }
         ]
@@ -171,9 +169,10 @@ function appendAbout(index) {
             {
                 title: 'Hobbies and Pastimes',
                 data: [
-                    {val : "jQuery"},
-                    {val : "CSS3, SCSS"},
-                    {val : "HTML5 & Responsive Designs"},
+                    {val : "PC Games and Designing"},
+                    {val : "Novels, Comics and everything fictional"},
+                    {val : "Photography"},
+                    {val : "Cooking and eating"},
                 ]
             }
         ]

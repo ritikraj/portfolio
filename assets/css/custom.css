@@ -346,12 +346,10 @@ div:first-of-type > .circle img{
         padding-top: 20px;
         font-size: 14px;
     }
-
     .back-box{
         top: 10px;
         left: 10px;
     }
-
     .heading{
         padding: 20px;
     }
@@ -382,11 +380,9 @@ div:first-of-type > .circle img{
         border: 1px solid black;
     }
     .close-button i, .controls i { font-size: 16px }
-
     .carousel, .carousel-inner {
         height: calc(100vh - 100px);
     }
-
     .carousel-item img{
         max-height: calc(100vh - 300px);
     }
@@ -397,7 +393,6 @@ div:first-of-type > .circle img{
         align-items: flex-start !important;
         padding-top: 100px;
     }
-
 }
 @media screen and (max-height: 500px) {
     .carousel-caption { display: none !important; }
