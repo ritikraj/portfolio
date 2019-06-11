@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0db58a1-c735-41b6-9dc7-10c3b625a071" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/projects/background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/projects/background.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -13,13 +15,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="160" column="51" selection-start-line="160" selection-start-column="51" selection-end-line="160" selection-end-column="51" />
+            <state relative-caret-position="1551">
+              <caret line="161" column="61" lean-forward="true" selection-start-line="161" selection-start-column="61" selection-end-line="161" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -33,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="238" selection-end-column="1" />
+            <state relative-caret-position="1135">
+              <caret line="393" column="24" lean-forward="true" selection-start-line="393" selection-start-column="24" selection-end-line="393" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -62,6 +69,7 @@
       <find>animated</find>
       <find>appendData</find>
       <find>CONTENT &gt;</find>
+      <find>skill</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -82,8 +90,8 @@
         <option value="$PROJECT_DIR$/assets/images/social/facebook.svg" />
         <option value="$PROJECT_DIR$/assets/images/social/twitter.svg" />
         <option value="$PROJECT_DIR$/assets/images/social/linkedin.svg" />
-        <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/assets/js/custom.js" />
       </list>
     </option>
@@ -164,11 +172,12 @@
       <workItem from="1559731693681" duration="54607000" />
       <workItem from="1560169499517" duration="1265000" />
       <workItem from="1560234996431" duration="5932000" />
+      <workItem from="1560246006927" duration="488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61804000" />
+    <option name="totallyTimeSpent" value="62326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
@@ -188,9 +197,11 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +256,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1551">
+          <caret line="161" column="61" lean-forward="true" selection-start-line="161" selection-start-column="61" selection-end-line="161" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -252,17 +270,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="160" column="51" selection-start-line="160" selection-start-column="51" selection-end-line="160" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="238" selection-end-column="1" />
+        <state relative-caret-position="1135">
+          <caret line="393" column="24" lean-forward="true" selection-start-line="393" selection-start-column="24" selection-end-line="393" selection-end-column="24" />
         </state>
       </provider>
     </entry>

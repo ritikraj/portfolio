@@ -159,6 +159,7 @@ function appendAbout(index) {
                 title: 'General',
                 data: [
                     {val : "Very trusting in nature"},
+                    {val : "Pausing Video Games in between"},
                     {val : "Needs a two-day break after continuous design-related failures"},
                 ]
             }
