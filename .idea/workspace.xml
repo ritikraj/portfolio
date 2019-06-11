@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0db58a1-c735-41b6-9dc7-10c3b625a071" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ritik's Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/RitikResume.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2937">
-              <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+            <state relative-caret-position="660">
+              <caret line="338" column="29" selection-start-line="338" selection-start-column="29" selection-end-line="338" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="759">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -85,8 +84,8 @@
         <option value="$PROJECT_DIR$/assets/images/social/twitter.svg" />
         <option value="$PROJECT_DIR$/assets/images/social/linkedin.svg" />
         <option value="$PROJECT_DIR$/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/custom.js" />
       </list>
     </option>
   </component>
@@ -165,12 +164,12 @@
       <updated>1559731692544</updated>
       <workItem from="1559731693681" duration="54607000" />
       <workItem from="1560169499517" duration="1265000" />
-      <workItem from="1560234996431" duration="5037000" />
+      <workItem from="1560234996431" duration="5290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60909000" />
+    <option name="totallyTimeSpent" value="61162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
@@ -254,17 +253,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2937">
-          <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+        <state relative-caret-position="759">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="660">
+          <caret line="338" column="29" selection-start-line="338" selection-start-column="29" selection-end-line="338" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -336,7 +336,7 @@ function appendCircles() {
             '<a target="_blank" href="https://twitter.com/wordsmith_11" class="p-3"><img alt="" src="assets/images/social/twitter.svg"></a>' +
             '</section>' +
             '<section class="central mt-4">' +
-            '<button class="btn btn-dark central">Resume <i class="material-icons">file_download</i></button>' +
+            '<a href="assets/RitikResume.pdf" target="_blank" class="btn btn-dark central">Resume <i class="material-icons">file_download</i></a>' +
             '</section>' +
             '</div>' +
             '</div>' +
