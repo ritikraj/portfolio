@@ -387,6 +387,13 @@ div:first-of-type > .circle img{
         max-height: calc(100vh - 300px);
     }
 
+    .skill-title {
+        font-size: 18px;
+    }
+    .skill-title ~ h5 {
+        font-size: 14px;
+    }
+
 }
 @media screen and (max-width: 575.98px) {
     .content{

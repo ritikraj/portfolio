@@ -75,7 +75,7 @@ function closeAction() {
 }
 
 function appendAboutInfo(list) {
-    const content = '<div class="content align-items-center"></div>';
+    const content = '<div class="content"></div>';
     $(".data-holder").append(content);
     let html = '<div>';
     for(let i = 0; i < list[0].data.length; i++){
@@ -158,7 +158,7 @@ function appendAbout(index) {
             {
                 title: 'General',
                 data: [
-                    {val : "Very trustworthy"},
+                    {val : "Very trusting in nature"},
                     {val : "Needs a two-day break after continuous design-related failures"},
                 ]
             }
@@ -288,10 +288,7 @@ function appendSkills(index) {
 }
 
 function appendTileData(index) {
-    if( activeTile === 0){
-
-    }
-    else if( activeTile === 1){
+    if( activeTile === 1){
         appendProjects(index);
     }
     else if( activeTile === 2){
