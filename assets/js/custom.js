@@ -74,6 +74,27 @@ function closeAction() {
     });
 }
 
+function appendAboutInfo(list) {
+    const content = '<div class="content align-items-center"></div>';
+    $(".data-holder").append(content);
+    let html = '<div>';
+    for(let i = 0; i < list[0].data.length; i++){
+        let classList = "";
+        if(i !== 0) classList = "mt-5";
+        html += '<div class="dark-text '+classList+'">' +
+            '<h3 class="skill-title font-italic">'+ list[0].data[i].title+'<div class="skill-bar"></div></h3>';
+
+        for( let j = 0; j < list[0].data[i].data.length; j++){
+            let classList2 = "";
+            if(j === 0) classList2 = "mt-4";
+            html+= '<h5 class="text-muted mt-2 '+classList2+'">'+ list[0].data[i].data[j].val +'</h5>';
+        }
+        html+= '</div>';
+    }
+    html+= '</div>';
+    $(".content").append(html);
+}
+
 function appendSkillsInfo(list) {
     const content = '<div class="content"></div>';
     $(".data-holder").append(content);
@@ -95,6 +116,72 @@ function appendSkillsInfo(list) {
     $(".content").append(html);
 }
 
+function appendAbout(index) {
+    const heads = ['Contact', 'Strengths', 'Weakness', 'Interests'];
+    let aboutData;
+    if(index === 0) aboutData = [{
+        data: [
+            {
+                title: 'Contact me',
+                data: [
+                    {val : "UX Research"},
+                    {val : "Ongoing Trends"},
+                    {val : "Laws of UX"},
+                ]
+            }
+        ]
+    }];
+    else if(index === 1) aboutData = [{
+        data: [
+            {
+                title: 'General',
+                data: [
+                    {val : "Vector Manipulation"},
+                    {val : "Material Design"},
+                    {val : "Flat Designs"},
+                    {val : "Typography"},
+                    {val : "Motion Graphics"},
+                ]
+            },
+            {
+                title: 'Technical',
+                data: [
+                    {val : "Adobe Illustrator"},
+                    {val : "Adobe XD"},
+                    {val : "Adobe Photoshop"},
+                    {val : "Adobe After Effects"},
+                ]
+            }
+        ]
+    }];
+    else if(index === 2) aboutData = [{
+        data: [
+            {
+                title: 'General',
+                data: [
+                    {val : "jQuery"},
+                    {val : "CSS3, SCSS"},
+                    {val : "HTML5 & Responsive Designs"},
+                ]
+            }
+        ]
+    }];
+    else if(index === 3) aboutData = [{
+        data: [
+            {
+                title: 'Hobbies and Pastimes',
+                data: [
+                    {val : "jQuery"},
+                    {val : "CSS3, SCSS"},
+                    {val : "HTML5 & Responsive Designs"},
+                ]
+            }
+        ]
+    }];
+    appendDataHolder(heads, index);
+    appendAboutInfo(aboutData);
+
+}
 
 function appendProjects(index) {
     const heads = ['UI/UX', 'WEB'];
@@ -212,12 +299,13 @@ function appendTileData(index) {
         appendSkills(index);
     }
     else if( activeTile === 3){
+        appendAbout(index)
     }
 }
 
 function onCircleClick() {
     $(".circle").on("click", function (e) {
-        if(activeTile === 1 || activeTile === 2){
+        if(activeTile !== 0){
             const index = $(this.parentNode).index();
             var fc = '<div class="fixed-circle"></div>';
             $('body').prepend(fc);
@@ -290,13 +378,13 @@ function appendCircles() {
             '</article>';
     }
     else if(activeTile === 3) {
-        const t = ['UI', 'UX', 'WEB'];
+        const t = ['Contact', 'Strengths', 'Weakness', 'Interests'];
         data ='<article class="container removable">' +
             '<section class="row animated fadeInUp justify-content-center">';
         for( let i = 0; i < t.length; i++){
-            data += '<div class="col-lg-3 col-6">' +
-                '<div class="central circle">' + t[i] +
-                '</div>' +
+            data += '<div class="col-lg-3 col-6 mt-4">' +
+                '<div class="central circle "><span class="primary-font">' + t[i] +
+                '</span></div>' +
                 '</div>';
         }
         data += '</section>' +

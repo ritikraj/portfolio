@@ -393,6 +393,10 @@ div:first-of-type > .circle img{
 
 }
 @media screen and (max-width: 575.98px) {
+    .content{
+        align-items: flex-start !important;
+        padding-top: 100px;
+    }
 
 }
 @media screen and (max-height: 500px) {
