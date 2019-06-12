@@ -187,19 +187,19 @@ function appendProjects(index) {
     const heads = ['UI/UX', 'WEB'];
     let projects;
     if(index === 0) projects = [
-        {name : "Osler Health Network - Patient App", link: "assets/images/projects/ui-ux/osler-health.png", description: "DevsLane"},
+        // {name : "Osler Health Network - Patient App", link: "assets/images/projects/ui-ux/osler-health.png", description: "DevsLane"},
         {name : "Confession Messenger", link: "assets/images/projects/ui-ux/confession.png", description: "DevsLane"},
         {name : "DevsLane Website", link: "assets/images/projects/ui-ux/devslane-website.svg", description: "DevsLane"},
-        {name : "Swirnow - Dashboard", link: "assets/images/projects/ui-ux/swirnow-dashboard.png", description: "DevsLane"},
-        {name : "Swirnow - Sites", link: "assets/images/projects/ui-ux/swirnow-guest.svg", description: "DevsLane"},
-        {name : "Vaetas - Shopify", link: "assets/images/projects/ui-ux/vaetas-shopify.png", description: "DevsLane"},
-        {name : "Butterfly - Dashboard", link: "assets/images/projects/ui-ux/butterfly.png", description: "DevsLane"},
+        // {name : "Swirnow - Dashboard", link: "assets/images/projects/ui-ux/swirnow-dashboard.png", description: "DevsLane"},
+        // {name : "Swirnow - Sites", link: "assets/images/projects/ui-ux/swirnow-guest.svg", description: "DevsLane"},
+        // {name : "Vaetas - Shopify", link: "assets/images/projects/ui-ux/vaetas-shopify.png", description: "DevsLane"},
+        // {name : "Butterfly - Dashboard", link: "assets/images/projects/ui-ux/butterfly.png", description: "DevsLane"},
         {name : "RaRa - Web Dashboard", link: "assets/images/projects/ui-ux/rara-dashboard.png", description: "DevsLane"}
     ];
     else if(index === 1) projects = [
         {name : "DevsLane Website", link: "assets/images/projects/web/devslane.svg", description: "DevsLane", href: "https://devslane.com/"},
-        {name : "StayDuvet", link: "assets/images/projects/web/stay-duvet.png", description: "DevsLane", href: "https://stayduvet.com/"},
-        {name : "PulseLabs", link: "assets/images/projects/web/pulselabs.png", description: "DevsLane", href: "https://dev.pulselabs.ai/"}
+        // {name : "StayDuvet", link: "assets/images/projects/web/stay-duvet.png", description: "DevsLane", href: "https://stayduvet.com/"},
+        // {name : "PulseLabs", link: "assets/images/projects/web/pulselabs.png", description: "DevsLane", href: "https://dev.pulselabs.ai/"}
     ];
     appendDataHolder(heads, index);
     appendSlideShow(projects);
