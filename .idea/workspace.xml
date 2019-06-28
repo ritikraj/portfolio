@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0db58a1-c735-41b6-9dc7-10c3b625a071" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/RitikResume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -123,15 +123,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/social" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/projects/ui-ux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\pf\assets\images" />
       <recent name="D:\github\pf\assets" />
+      <recent name="D:\github\pf\assets\images" />
       <recent name="D:\github\pf\assets\images\projects\ui-ux" />
       <recent name="D:\github\pf\assets\images\projects" />
       <recent name="D:\github\pf\assets\images\projects\web" />
@@ -165,12 +165,12 @@
       <workItem from="1560246006927" duration="488000" />
       <workItem from="1560935177767" duration="6000" />
       <workItem from="1561298846744" duration="1006000" />
-      <workItem from="1561300770190" duration="777000" />
+      <workItem from="1561300770190" duration="1480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65677000" />
+    <option name="totallyTimeSpent" value="66380000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -183,12 +183,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25373963" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32917964" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />

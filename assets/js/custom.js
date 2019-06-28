@@ -195,7 +195,8 @@ function appendProjects(index) {
         // {name : "Vaetas - Shopify", link: "assets/images/projects/ui-ux/vaetas-shopify.png", description: "DevsLane"},
         // {name : "Butterfly - Dashboard", link: "assets/images/projects/ui-ux/butterfly.png", description: "DevsLane"},
         {name : "RaRa - Web Dashboard", link: "assets/images/projects/ui-ux/rara-dashboard.png", description: "DevsLane"},
-        {name : "Concept of a Social App", link: "assets/images/projects/ui-ux/social-app.webp", description: "My Project"}
+        {name : "Concept of a Social App", link: "assets/images/projects/ui-ux/social-app.webp", description: "My Project"},
+        {name : "Concept of a Login Screen", link: "assets/images/projects/ui-ux/login-screen-concept.png", description: "My Project"},
     ];
     else if(index === 1) projects = [
         {name : "DevsLane Website", link: "assets/images/projects/web/devslane.svg", description: "DevsLane", href: "https://devslane.com/"},
