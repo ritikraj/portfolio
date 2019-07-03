@@ -331,7 +331,7 @@ function appendCircles() {
             '<h4 class="mt-2">Front-end Developer</h4>' +
             '<section class="social central w-100">' +
             '<a target="_blank" href="https://github.com/ritikraj" class="p-3"><img alt="" src="assets/images/social/github.svg"></a>' +
-            '<a target="_blank" href="https://dribbble.com/ritikraj559" class="p-3"><img alt="" src="assets/images/social/dribbble.svg"></a>' +
+            '<a target="_blank" href="https://dribbble.com/ritik-raj" class="p-3"><img alt="" src="assets/images/social/dribbble.svg"></a>' +
             '<a target="_blank" href="https://www.linkedin.com/in/ritik-raj/" class="p-3"><img alt="" src="assets/images/social/linkedin.svg"></a>' +
             '<a target="_blank" href="https://www.facebook.com/fusion.ritik" class="p-3"><img alt="" src="assets/images/social/facebook.svg"></a>' +
             '<a target="_blank" href="https://twitter.com/wordsmith_11" class="p-3"><img alt="" src="assets/images/social/twitter.svg"></a>' +
